@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+img {
+    float: right;
+    position: relative;
+    height: 150px;
+    margin: 0px;
+    /* margin: 0 20px 0px 0; */
+    /* padding: 0 0 30px 0; */
+
+}
+h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+    margin: 0px 0 20px 0;
+}
+.name > h2 {
+    font-weight: 800;
+    font-size: 4em;
+    color: darkblue;
+}
+.name > h3 {
+    font-weight: 300;
+    font-size: 2.5em;
+    color: darkblue;
+}
+
+/* .name {
+    font-weight: 800;
+    font-size: 2.5em;
+    color: darkblue;
+} */
+
+.separator {
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+    margin: 20px 0 20px 0;
+}
+
+.btn {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btnwrapper {
+    text-align: center;
+}
+/* change background on mouse-over */
+.btn:hover {
+background-color: RoyalBlue;
+}
+
+p {
+    /* margin: 20px 0 0 0; */
+}
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: rgb(227, 227, 227);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+.page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+}
+}
+@media only screen and (max-width: 750px){
+    .page {
+        width: 100%;
+        height: auto;
+        padding: 2cm;
+        margin: 1cm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: rgb(227, 227, 227);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+}
